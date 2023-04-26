@@ -1,0 +1,54 @@
+body{
+	font-family: 'Times New Roman', Times, serif;
+	padding-bottom: 150px;
+	padding-left: 500px;
+}
+div.ingredient-group{
+	margin: 5px;
+	padding: 2px;
+	border: 2px solid blueviolet;
+	border-radius: 5px;
+	width: 40%;
+	display: inline-block;
+}
+#bt{
+	background-color: darkviolet;
+	color: white;
+	font-weight: bold;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+#bt:hover{
+	background-color: violet;
+}
+
+div.ingredient-group:nth-child(odd) {
+	float: left;
+	padding-right: 20px;
+}
+
+div.ingredient-group:nth-child(even) {
+    float: left;
+	padding-right: 0;
+}
+
+div.ingredient-group {
+	width: 50%;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+span.validationError {
+	color: red;
+}
